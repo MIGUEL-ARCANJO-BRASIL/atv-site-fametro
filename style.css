@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f5f5f5;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  list-style-type: none;
+  align-items: center;
+  padding: 16px;
+  gap: 10px;
+}
+
+a {
+  color: #555;
+  text-decoration: none;
+}
+
+.rodape {
+  background-color: #1b5cb5;
+  padding: 20px;
+}
+
+.contatos {
+  background-color: #1b5cb5;
+  display: flex;
+  justify-content: space-around;
+  font-size: 18px;
+  padding: 10px;
+}
+
+.contatos ul {
+  padding: 2px;
+}
+
+.navbar {
+  flex-grow: 1;
+}
+
+.container-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 40px;
+  background: white;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 50px;
+}
+
+.img-navbar {
+  margin-right: 100px;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+.navbar a {
+  color: #333;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s, border-bottom 0.3s;
+  padding-bottom: 4px;
+}
+
+.navbar a:hover {
+  color: #1b5cb5;
+  border-bottom: 2px solid #1b5cb5;
+}
+
+.container-sobre {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  padding: 40px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin: 50px auto;
+  width: 78%;
+}
+
+.img-sobre img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.sobre {
+  flex: 1;
+}
+
+.sobre h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #1b5cb5;
+  position: relative;
+}
+
+.sobre p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 16px;
+}
+
+.cursos {
+  width: 90%;
+  max-width: 1200px;
+  margin: 120px auto;
+  text-align: center;
+}
+
+.cursos-title h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #1b5cb5;
+  position: relative;
+}
+
+.cursos-list ul {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(200px, 400px));
+
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  width: auto;
+  justify-content: center;
+}
+
+.cursos-list li {
+  background: #fff;
+  width: 100%;
+  min-height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+  font-size: 18px;
+  font-weight: 700;
+  color: #333;
+
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.cursos-list li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
